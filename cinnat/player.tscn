@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c8xt6hx6vn8n4"]
+
+[ext_resource type="Script" uid="uid://bim6xeoh7xftu" path="res://scripts/player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://baw0vx4j654im" path="res://assets/Extra animations and enemies/Alien sprites/alienBlue.png" id="2_i3pqv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hqtel"]
+radius = 20.0
+height = 74.0
+
+[node name="player" type="CharacterBody2D" unique_id=1774059176]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=164626789]
+texture = ExtResource("2_i3pqv")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=575535715]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=304816098]
+shape = SubResource("CapsuleShape2D_hqtel")

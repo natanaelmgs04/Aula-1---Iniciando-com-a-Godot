@@ -10,9 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Cinnat"
-run/main_scene="res://level.tscn"
-config/features=PackedStringArray("4.6", "GL Compatibility")
+config/name="New Game Project"
+config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
 [physics]
@@ -22,5 +21,3 @@ config/icon="res://icon.svg"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
